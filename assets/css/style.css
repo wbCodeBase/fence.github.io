@@ -501,7 +501,7 @@ a.trust__item:hover { background: var(--green-50); }
 .trust__item .stars svg { width: 14px; height: 14px; }
 /* ---------- Numbers bar (#5) ---------- */
 .numbers { position: relative; isolation: isolate; padding-block: clamp(64px, 8vw, 96px); background: #12200d; overflow: hidden; }
-.numbers::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url(../img/wood-1.webp) center 60% / cover no-repeat; opacity: .22; filter: grayscale(.3); }
+.numbers::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url(../img/comp/mills-wood-fence-columbus-ohio-fence-company-15.jpg) center 60% / cover no-repeat; opacity: .22; filter: grayscale(.3); }
 .numbers::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 15% 0%, rgba(82, 145, 25, .45), transparent 55%), radial-gradient(ellipse at 90% 100%, rgba(82, 145, 25, .3), transparent 50%), linear-gradient(180deg, rgba(18, 32, 13, .7), rgba(18, 32, 13, .92)); }
 .numbers__row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .num {
@@ -597,7 +597,7 @@ a.trust__item:hover { background: var(--green-50); }
 
 /* ---------- Final CTA ---------- */
 .cta-final { position: relative; isolation: isolate; padding-block: var(--section-y); color: #fff; }
-.cta-final::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url(../img/aluminum-1.webp) center / cover no-repeat; }
+.cta-final::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url(../img/comp/mae-aluminum.webp) center / cover no-repeat; }
 .cta-final::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(100deg, rgba(14, 30, 8, .9) 0%, rgba(14, 30, 8, .72) 55%, rgba(14, 30, 8, .5) 100%); }
 .cta-final__inner { display: grid; grid-template-columns: 1fr 440px; gap: clamp(40px, 6vw, 80px); align-items: center; }
 .cta-final__title { color: #fff; font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; letter-spacing: -0.03em; }
@@ -863,7 +863,7 @@ a.trust__item:hover { background: var(--green-50); }
 .area-strip__title .ico { color: var(--green); }
 .cities--inline { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 0; }
 .cities--inline a { padding: 9px 16px; border-radius: 99px; font-size: 14px; }
-.cta-final--privacy::before { background-image: url(../img/vinyl-2.webp); }
+.cta-final--privacy::before { background-image: url(../img/comp/mills-vinyl-fence-columbus-ohio-fence-company-18.jpg); }
 
 /* =========================================================
    Responsive

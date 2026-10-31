@@ -202,35 +202,35 @@
   /* ---------- Materials explorer ---------- */
   const MATERIALS = {
     wood: {
-      name: 'Wood Fencing', label: 'wood', fence: 'Wood', img: 'assets/img/wood-3.webp', alt: 'Cedar shadowbox fence around a suburban home',
+      name: 'Wood Fencing', label: 'wood', fence: 'Wood', img: 'assets/img/comp/mills-wood-fence-columbus-ohio-fence-company-090925-01.jpg', alt: 'Cedar privacy fence along a residential lot',
       desc: 'A warm, traditional look that fits almost any home. We install cedar, western red cedar and pressure-treated pine in privacy, shadowbox, picket and split rail styles.',
       best: 'Privacy, natural look, budget-friendly projects', height: '4 ft – 8 ft',
       brands: 'Cedar, Western Red Cedar, Pressure-Treated Pine', level: 3, maint: 'Stain or seal every few years',
       link: '/wood-fence-columbus-ohio',
     },
     vinyl: {
-      name: 'Vinyl Fencing', label: 'vinyl', fence: 'Vinyl', img: 'assets/img/vinyl-3.webp', alt: 'White vinyl picket fence on a stone wall',
+      name: 'Vinyl Fencing', label: 'vinyl', fence: 'Vinyl', img: 'assets/img/comp/mills-vinyl-fence-columbus-ohio-fence-company-09.jpg', alt: 'White vinyl privacy fence with lattice top',
       desc: "Clean, bright and practically maintenance-free. Our premium vinyl is engineered to handle Ohio's freeze-thaw cycles without cracking, warping or fading.",
       best: 'Privacy, pools, picket fences, low upkeep', height: '3 ft – 8 ft',
       brands: 'Bufftech, Catalyst', level: 1, maint: 'Rinse with a hose once in a while',
       link: '/vinyl-fence-columbus-ohio',
     },
     aluminum: {
-      name: 'Aluminum Fencing', label: 'aluminum', fence: 'Aluminum', img: 'assets/img/aluminum-1.webp', alt: 'Black aluminum fence surrounding a community pool',
+      name: 'Aluminum Fencing', label: 'aluminum', fence: 'Aluminum', img: 'assets/img/comp/mae-aluminum.webp', alt: 'Black ornamental aluminum fence',
       desc: 'The look of wrought iron without the rust. Rust-resistant powder-coated systems keep sightlines open, ideal for front yards, pools and commercial frontage.',
       best: 'Pool code compliance, front yards, curb appeal', height: '4 ft – 6 ft',
       brands: 'Catalyst, Ameristar', level: 1, maint: 'Virtually none',
       link: '/aluminum-fence-columbus-ohio',
     },
     chain: {
-      name: 'Chain Link Fencing', label: 'chain link', fence: 'Chain Link', img: 'assets/img/chainlink-2.webp', alt: 'Galvanized chain link fence at a commercial property',
+      name: 'Chain Link Fencing', label: 'chain link', fence: 'Chain Link', img: 'assets/img/comp/mae-chainlink.webp', alt: 'Chain link fence around sports courts',
       desc: 'Durable, economical and secure. Available galvanized or vinyl-coated, with privacy slats, barbed wire or anti-climb options for commercial security.',
       best: 'Pet containment, large areas, commercial security', height: '4 ft – 12 ft',
       brands: 'Galvanized, Vinyl-Coated (black & green)', level: 1, maint: 'Virtually none',
       link: '/chain-link-fence-columbus-ohio',
     },
     composite: {
-      name: 'Composite Fencing', label: 'composite', fence: 'Composite', img: 'assets/img/composite-1.webp', alt: 'Composite shadowbox fence in a green backyard',
+      name: 'Composite Fencing', label: 'composite', fence: 'Composite', img: 'assets/img/comp/mills-composite-fence-columbus-ohio-fence-company-090925-01.jpg', alt: 'Composite privacy fence along a driveway',
       desc: 'The rich look of wood with none of the rot, splinters or staining. An eco-friendly option built for long-term performance and a consistent finish.',
       best: 'Premium privacy, long-term value, eco-conscious', height: '6 ft – 8 ft',
       brands: 'Wood-alternative composite panels', level: 2, maint: 'Occasional wash, no staining',
