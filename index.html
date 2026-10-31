@@ -180,12 +180,14 @@
       <div class="quote" id="estimate">
         <form class="quote__form" id="quote-form" novalidate>
           <div class="quote__head">
+            <span class="quote__badge"><svg class="ico"><use href="#i-file"/></svg> Free estimate form</span>
             <h2 class="quote__title">Get your free estimate</h2>
             <p class="quote__sub">Takes about a minute. No obligation.</p>
-            <div class="quote__progress" aria-hidden="true">
-              <span class="quote__bar"><span class="quote__bar-fill"></span></span>
-              <span class="quote__step-label">Step <b class="js-step-num">1</b> of 3</span>
-            </div>
+            <ol class="quote__steps" aria-label="Form progress">
+              <li class="is-current"><span>1</span>Fence type</li>
+              <li><span>2</span>Project</li>
+              <li><span>3</span>Contact</li>
+            </ol>
           </div>
 
           <!-- Step 1 -->
@@ -230,6 +232,10 @@
               </label>
             </div>
             <p class="quote__error" data-error-for="fence_type">Please choose a fence type to continue.</p>
+            <div class="quote__nav quote__nav--start">
+              <span class="quote__hint"><svg class="ico"><use href="#i-check"/></svg> Tap an option to start</span>
+              <button type="button" class="btn btn--primary" data-next disabled>Continue <svg class="ico"><use href="#i-arrow"/></svg></button>
+            </div>
           </fieldset>
 
           <!-- Step 2 -->
@@ -324,14 +330,100 @@
     </button>
   </section>
 
-  <!-- ============ STATS ============ -->
-  <section class="stats" aria-label="Elite Fence at a glance">
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust" aria-label="Ratings and credentials">
     <div class="container">
-      <div class="stats__card">
-        <div class="stat"><p class="stat__num"><span data-count="25">25</span>+</p><p class="stat__label">Years serving Columbus</p></div>
-        <div class="stat"><p class="stat__num"><span data-count="2500" data-format="comma">2,500</span>+</p><p class="stat__label">Fences installed</p></div>
-        <div class="stat"><p class="stat__num">A+</p><p class="stat__label">BBB accredited rating</p></div>
-        <div class="stat"><p class="stat__num"><span data-count="70">70</span>+</p><p class="stat__label">Five-star Google reviews</p></div>
+      <div class="trust__card">
+        <ul class="trust__items">
+          <li>
+            <a class="trust__item" href="#reviews">
+              <span class="trust__icon trust__icon--google" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+              <span><strong>4.5 <span class="stars" aria-label="4.5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star-half"/></svg></span></strong><small>100 Google reviews</small></span>
+            </a>
+          </li>
+          <li>
+            <div class="trust__item">
+              <span class="trust__icon" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+              <span><strong>A+ Rated</strong><small>Better Business Bureau</small></span>
+            </div>
+          </li>
+          <li>
+            <div class="trust__item">
+              <span class="trust__icon" aria-hidden="true"><svg><use href="#i-file"/></svg></span>
+              <span><strong>Licensed contractor</strong><small>Columbus City GC license</small></span>
+            </div>
+          </li>
+          <li>
+            <div class="trust__item">
+              <span class="trust__icon" aria-hidden="true"><svg><use href="#i-home"/></svg></span>
+              <span><strong>Since 2000</strong><small>Locally owned in Columbus</small></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / INTRO ============ -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container intro">
+      <div class="intro__content">
+        <h2 class="section__title" id="about-title">Your local fence company in Columbus</h2>
+        <div class="intro__copy">
+          <p>Elite Fence has been building fences for Central Ohio homeowners and businesses since 2000. We're a locally owned fence contractor based in downtown Columbus, so the people who quote your project live and work in the same neighborhoods we build in.</p>
+          <p>We install wood, vinyl, aluminum, chain link and composite fencing, from backyard privacy fences and pool enclosures to commercial security perimeters. After more than 2,500 installations, we know how Columbus clay soil, freeze-thaw winters and local HOA rules affect a fence, and we plan every job around them.</p>
+          <p>Homeowners choose us for honest advice without the hard sell, clear pricing and crews that leave the yard cleaner than they found it.</p>
+        </div>
+        <ul class="intro__creds">
+          <li><svg class="ico"><use href="#i-shield"/></svg> Licensed, bonded &amp; insured</li>
+          <li><svg class="ico"><use href="#i-file"/></svg> Columbus City General Contractor license</li>
+          <li><svg class="ico"><use href="#i-award"/></svg> Westbury Award, Best Rail Installation</li>
+          <li><svg class="ico"><use href="#i-home"/></svg> Ohio Dept. of Agriculture certified</li>
+        </ul>
+      </div>
+
+      <aside class="promise reveal" aria-label="Our promise">
+        <div class="promise__media">
+          <img src="assets/img/picket-1.jpg" alt="White vinyl picket fence installed in front of a Columbus-area home" width="1920" height="1440" loading="lazy" />
+        </div>
+        <div class="promise__body">
+          <img class="promise__badge" src="assets/img/logo.webp" alt="" width="132" height="132" loading="lazy" />
+          <p class="promise__label">Our promise to you</p>
+          <p class="promise__text">You get clear, written pricing before any work begins, and every product we install is backed by a full warranty.</p>
+          <p class="promise__sign">The Elite Fence team</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ NUMBERS BAR ============ -->
+  <section class="numbers" aria-label="Elite Fence by the numbers">
+    <div class="container">
+      <div class="numbers__row">
+        <div class="num reveal">
+          <span class="num__icon" aria-hidden="true"><svg><use href="#i-home"/></svg></span>
+          <p class="num__value"><span data-count="2500" data-format="comma">2,500</span><em>+</em></p>
+          <p class="num__label">Fences installed</p>
+          <p class="num__sub">Homes and businesses across Central Ohio</p>
+        </div>
+        <div class="num reveal">
+          <span class="num__icon" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+          <p class="num__value"><span data-count="25">25</span><em>+</em></p>
+          <p class="num__label">Years in business</p>
+          <p class="num__sub">Locally owned in Columbus since 2000</p>
+        </div>
+        <div class="num reveal">
+          <span class="num__icon" aria-hidden="true"><svg><use href="#i-star"/></svg></span>
+          <p class="num__value"><span data-count="100">100</span></p>
+          <p class="num__label">Google reviews</p>
+          <p class="num__sub">4.5-star average, 70+ five-star ratings</p>
+        </div>
+        <div class="num reveal">
+          <span class="num__icon" aria-hidden="true"><svg><use href="#i-truck"/></svg></span>
+          <p class="num__value">2–5<em class="num__unit">days</em></p>
+          <p class="num__label">Average install</p>
+          <p class="num__sub">Most residential projects, start to finish</p>
+        </div>
       </div>
     </div>
   </section>
@@ -642,38 +734,6 @@
         <a class="btn btn--light btn--lg" href="/financing">See financing options</a>
         <a class="btn btn--ghost-light btn--lg" href="#estimate" data-focus-form>Get a free estimate</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ ABOUT / INTRO ============ -->
-  <section class="section" id="about" aria-labelledby="about-title">
-    <div class="container intro">
-      <div class="intro__content">
-        <h2 class="section__title" id="about-title">Your local fence company in Columbus</h2>
-        <div class="intro__copy">
-          <p>Elite Fence has been building fences for Central Ohio homeowners and businesses since 2000. We're a locally owned fence contractor based in downtown Columbus, so the people who quote your project live and work in the same neighborhoods we build in.</p>
-          <p>We install wood, vinyl, aluminum, chain link and composite fencing, from backyard privacy fences and pool enclosures to commercial security perimeters. After more than 2,500 installations, we know how Columbus clay soil, freeze-thaw winters and local HOA rules affect a fence, and we plan every job around them.</p>
-          <p>Homeowners choose us for honest advice without the hard sell, clear pricing and crews that leave the yard cleaner than they found it.</p>
-        </div>
-        <ul class="intro__creds">
-          <li><svg class="ico"><use href="#i-shield"/></svg> Licensed, bonded &amp; insured</li>
-          <li><svg class="ico"><use href="#i-file"/></svg> Columbus City General Contractor license</li>
-          <li><svg class="ico"><use href="#i-award"/></svg> Westbury Award, Best Rail Installation</li>
-          <li><svg class="ico"><use href="#i-home"/></svg> Ohio Dept. of Agriculture certified</li>
-        </ul>
-      </div>
-
-      <aside class="promise reveal" aria-label="Our promise">
-        <div class="promise__media">
-          <img src="assets/img/picket-1.jpg" alt="White vinyl picket fence installed in front of a Columbus-area home" width="1920" height="1440" loading="lazy" />
-        </div>
-        <div class="promise__body">
-          <img class="promise__badge" src="assets/img/logo.webp" alt="" width="132" height="132" loading="lazy" />
-          <p class="promise__label">Our promise to you</p>
-          <p class="promise__text">You get clear, written pricing before any work begins, and every product we install is backed by a full warranty.</p>
-          <p class="promise__sign">The Elite Fence team</p>
-        </div>
-      </aside>
     </div>
   </section>
 

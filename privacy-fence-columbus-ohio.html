@@ -112,6 +112,22 @@
         },
         {
           "@type": "Question",
+          "name": "Does a privacy fence reduce noise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, somewhat. A solid, full-height fence with no gaps softens traffic and neighborhood noise, especially at 6 to 8 ft. It won't soundproof a yard, but most homeowners notice a calmer backyard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will there be gaps between the boards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Natural wood shrinks as it dries, which can open small gaps. Board-on-board and shadowbox styles overlap the boards to prevent this, and vinyl and composite panels stay gap-free."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Which side of the fence faces my neighbor?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -276,7 +292,7 @@
 
         <h1 class="hero__title hero__title--service" id="hero-title">Privacy Fence Installation in Columbus,&nbsp;OH</h1>
 
-        <p class="hero__lead">Turn your backyard into a private outdoor room. Elite Fence designs and installs wood, vinyl and composite privacy fences built to stay straight through Central Ohio's clay soil and freeze-thaw winters.</p>
+        <p class="hero__lead">Block the view, the noise and the neighbors with a 6 ft privacy fence built for Ohio wind and winters. Elite Fence installs wood, vinyl and composite privacy fences across Columbus, set deep and built to stay straight.</p>
 
         <ul class="hero__checks">
           <li><svg class="ico"><use href="#i-check"/></svg> 6 ft &amp; 8 ft privacy options</li>
@@ -303,12 +319,14 @@
         <form class="quote__form" id="quote-form" novalidate>
           <input type="hidden" name="style" value="Privacy fence" />
           <div class="quote__head">
+            <span class="quote__badge"><svg class="ico"><use href="#i-file"/></svg> Free estimate form</span>
             <h2 class="quote__title">Get a free privacy fence quote</h2>
             <p class="quote__sub">Takes about a minute. No obligation.</p>
-            <div class="quote__progress" aria-hidden="true">
-              <span class="quote__bar"><span class="quote__bar-fill"></span></span>
-              <span class="quote__step-label">Step <b class="js-step-num">1</b> of 3</span>
-            </div>
+            <ol class="quote__steps" aria-label="Form progress">
+              <li class="is-current"><span>1</span>Material</li>
+              <li><span>2</span>Project</li>
+              <li><span>3</span>Contact</li>
+            </ol>
           </div>
 
           <fieldset class="quote__step is-active" data-step="1">
@@ -340,6 +358,10 @@
               </label>
             </div>
             <p class="quote__error" data-error-for="fence_type">Please choose a material to continue.</p>
+            <div class="quote__nav quote__nav--start">
+              <span class="quote__hint"><svg class="ico"><use href="#i-check"/></svg> Tap an option to start</span>
+              <button type="button" class="btn btn--primary" data-next disabled>Continue <svg class="ico"><use href="#i-arrow"/></svg></button>
+            </div>
           </fieldset>
 
           <fieldset class="quote__step" data-step="2">
@@ -443,8 +465,8 @@
         <img class="benefits__img benefits__img--inset" src="assets/img/composite-1.webp" alt="Composite shadowbox privacy fence enclosing a green lawn" width="800" height="600" loading="lazy" />
       </div>
       <div class="benefits__content">
-        <h2 class="section__title" id="benefits-title">A backyard that finally feels like yours</h2>
-        <p class="section__lead">A well-built privacy fence does more than block the view. It changes how you use your outdoor space, every day of the year.</p>
+        <h2 class="section__title" id="benefits-title">Privacy fences in Columbus, Ohio</h2>
+        <p class="section__lead">Privacy fence installation is the most requested job we do in Columbus. Homeowners on busy roads, families with close neighbors or a new pool, and anyone with a dog that barks at passersby all want the same thing: a full-height, no-gap fence that turns the backyard into a private room.</p>
         <ul class="benefit-list">
           <li><span class="benefit-list__icon"><svg><use href="#i-home"/></svg></span><div><h3>Real privacy, not partial</h3><p>Relax, grill and entertain without neighbors or passing traffic looking in.</p></div></li>
           <li><span class="benefit-list__icon"><svg><use href="#i-shield"/></svg></span><div><h3>Safe space for kids and pets</h3><p>Solid panels and secure gates keep dogs in and unwanted visitors out.</p></div></li>
@@ -526,85 +548,8 @@
     </div>
   </section>
 
-  <!-- ============ HEIGHT GUIDE ============ -->
-  <section class="section" id="height" aria-labelledby="height-title">
-    <div class="container height-guide" data-ft="6">
-      <div class="height-guide__content">
-        <h2 class="section__title" id="height-title">How tall should your privacy fence be?</h2>
-        <p class="section__lead">Height decides how much privacy you actually get. Compare the common options against an average adult's eye level.</p>
-
-        <div class="height-guide__btns" role="group" aria-label="Fence height">
-          <button class="height-guide__btn" data-ft="4" aria-pressed="false">4 ft</button>
-          <button class="height-guide__btn is-active" data-ft="6" aria-pressed="true">6 ft</button>
-          <button class="height-guide__btn" data-ft="8" aria-pressed="false">8 ft</button>
-        </div>
-
-        <div class="height-guide__notes" aria-live="polite">
-          <div class="height-guide__note" data-ft="4" hidden>
-            <h3>4 ft: front-yard friendly</h3>
-            <p>Defines your yard and keeps small pets in, but most adults can see right over it. Around four feet is the typical front-yard limit in many Central Ohio neighborhoods.</p>
-          </div>
-          <div class="height-guide__note" data-ft="6">
-            <h3>6 ft: the backyard standard</h3>
-            <p>Sits above eye level for most adults, so neighbors and passersby can't see in. Six feet is the most common backyard height allowed in Columbus-area residential zones.</p>
-          </div>
-          <div class="height-guide__note" data-ft="8" hidden>
-            <h3>8 ft: maximum seclusion</h3>
-            <p>Ideal beside busy roads, elevated decks or two-story neighbors. Only allowed in some zones or with approval, so we confirm your city code and HOA rules before quoting.</p>
-          </div>
-        </div>
-
-        <p class="height-guide__fine"><svg class="ico"><use href="#i-file"/></svg> Rules vary by city and HOA. We check your local requirements before any work begins.</p>
-      </div>
-
-      <figure class="height-guide__figure" aria-hidden="true">
-        <svg viewBox="0 0 620 380" class="height-guide__svg">
-          <defs>
-            <clipPath id="hg-clip"><rect id="hg-clip-rect" x="0" y="124" width="560" height="216"/></clipPath>
-            <linearGradient id="hg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5e6"/><stop offset="1" stop-color="#f8faf5"/></linearGradient>
-          </defs>
-          <rect width="620" height="380" rx="18" fill="url(#hg-sky)"/>
-          <rect x="0" y="340" width="620" height="40" fill="#cfe2b8"/>
-          <rect x="0" y="340" width="620" height="4" fill="#b5d095"/>
-
-          <!-- Fence: drawn full height, revealed by the clip rect -->
-          <g clip-path="url(#hg-clip)">
-            <g fill="#c9915b">
-              <rect x="30" y="40" width="22" height="300"/><rect x="54" y="40" width="22" height="300"/><rect x="78" y="40" width="22" height="300"/>
-              <rect x="102" y="40" width="22" height="300"/><rect x="126" y="40" width="22" height="300"/><rect x="150" y="40" width="22" height="300"/>
-              <rect x="174" y="40" width="22" height="300"/><rect x="198" y="40" width="22" height="300"/><rect x="222" y="40" width="22" height="300"/>
-              <rect x="246" y="40" width="22" height="300"/><rect x="270" y="40" width="22" height="300"/><rect x="294" y="40" width="22" height="300"/>
-              <rect x="318" y="40" width="22" height="300"/><rect x="342" y="40" width="22" height="300"/>
-            </g>
-            <g fill="#b07a46" opacity=".55">
-              <rect x="52" y="40" width="2" height="300"/><rect x="100" y="40" width="2" height="300"/><rect x="148" y="40" width="2" height="300"/>
-              <rect x="196" y="40" width="2" height="300"/><rect x="244" y="40" width="2" height="300"/><rect x="292" y="40" width="2" height="300"/><rect x="340" y="40" width="2" height="300"/>
-            </g>
-          </g>
-          <rect class="js-hg-cap" x="24" y="118" width="346" height="8" rx="3" fill="#8f5e2f"/>
-
-          <!-- Dimension -->
-          <line class="js-hg-dim" x1="392" x2="392" y1="124" y2="340" stroke="#529119" stroke-width="2"/>
-          <line x1="384" x2="400" y1="340" y2="340" stroke="#529119" stroke-width="2"/>
-          <text class="js-hg-dim-label height-guide__dim" x="392" y="235">6 ft</text>
-
-          <!-- Eye level -->
-          <line x1="20" x2="604" y1="146" y2="146" stroke="#ffa300" stroke-width="2" stroke-dasharray="6 6"/>
-          <text x="604" y="138" class="height-guide__eye">Eye level</text>
-
-          <!-- Person, 5 ft 10 in -->
-          <g fill="#15201a">
-            <circle cx="470" cy="148" r="15"/>
-            <path d="M448 170 Q470 160 492 170 L498 252 L489 252 L487 340 L474 340 L472 262 L468 262 L466 340 L453 340 L451 252 L442 252 Z"/>
-          </g>
-        </svg>
-        <figcaption>Scale drawing: adult shown at 5 ft 10 in.</figcaption>
-      </figure>
-    </div>
-  </section>
-
   <!-- ============ MATERIAL COMPARISON ============ -->
-  <section class="section section--alt" id="materials" aria-labelledby="compare-title">
+  <section class="section" id="materials" aria-labelledby="compare-title">
     <div class="container compare" data-highlight="">
       <div class="section__head section__head--split">
         <div>
@@ -651,6 +596,91 @@
           </tfoot>
         </table>
       </div>
+      <div class="compare__alt">
+        <span class="compare__alt-icon" aria-hidden="true"><svg><use href="#i-layers"/></svg></span>
+        <p><strong>On a tighter budget?</strong> Chain link with privacy slats screens most of the view for less, and aluminum works where an HOA limits solid fences.</p>
+        <div class="compare__alt-links">
+          <a href="/chain-link-fence-columbus-ohio">Chain link <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+          <a href="/aluminum-fence-columbus-ohio">Aluminum <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HEIGHT GUIDE ============ -->
+  <section class="section section--alt" id="height" aria-labelledby="height-title">
+    <div class="container height-guide" data-ft="6">
+      <div class="height-guide__content">
+        <h2 class="section__title" id="height-title">Privacy fence height, permits and HOA rules in Columbus</h2>
+        <p class="section__lead">Height decides how much privacy you actually get. Compare the common options against an average adult's eye level.</p>
+
+        <div class="height-guide__btns" role="group" aria-label="Fence height">
+          <button class="height-guide__btn" data-ft="4" aria-pressed="false">4 ft</button>
+          <button class="height-guide__btn is-active" data-ft="6" aria-pressed="true">6 ft</button>
+          <button class="height-guide__btn" data-ft="8" aria-pressed="false">8 ft</button>
+        </div>
+
+        <div class="height-guide__notes" aria-live="polite">
+          <div class="height-guide__note" data-ft="4" hidden>
+            <h3>4 ft: front-yard friendly</h3>
+            <p>Defines your yard and keeps small pets in, but most adults can see right over it. Around four feet is the typical front-yard limit in many Central Ohio neighborhoods.</p>
+          </div>
+          <div class="height-guide__note" data-ft="6">
+            <h3>6 ft: the backyard standard</h3>
+            <p>Sits above eye level for most adults, so neighbors and passersby can't see in. Six feet is the most common backyard height allowed in Columbus-area residential zones.</p>
+          </div>
+          <div class="height-guide__note" data-ft="8" hidden>
+            <h3>8 ft: maximum seclusion</h3>
+            <p>Ideal beside busy roads, elevated decks or two-story neighbors. Only allowed in some zones or with approval, so we confirm your city code and HOA rules before quoting.</p>
+          </div>
+        </div>
+
+        <p class="height-guide__fine"><svg class="ico"><use href="#i-file"/></svg> Most Columbus-area fences need a permit, and many neighborhoods need HOA approval. We confirm your local rules and handle the paperwork before any work begins.</p>
+      </div>
+
+      <figure class="height-guide__figure" aria-hidden="true">
+        <svg viewBox="0 0 620 380" class="height-guide__svg">
+          <defs>
+            <clipPath id="hg-clip"><rect id="hg-clip-rect" x="0" y="124" width="560" height="216"/></clipPath>
+            <linearGradient id="hg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5e6"/><stop offset="1" stop-color="#f8faf5"/></linearGradient>
+          </defs>
+          <rect width="620" height="380" rx="18" fill="url(#hg-sky)"/>
+          <rect x="0" y="340" width="620" height="40" fill="#cfe2b8"/>
+          <rect x="0" y="340" width="620" height="4" fill="#b5d095"/>
+
+          <!-- Fence: drawn full height, revealed by the clip rect -->
+          <g clip-path="url(#hg-clip)">
+            <g fill="#c9915b">
+              <rect x="30" y="40" width="22" height="300"/><rect x="54" y="40" width="22" height="300"/><rect x="78" y="40" width="22" height="300"/>
+              <rect x="102" y="40" width="22" height="300"/><rect x="126" y="40" width="22" height="300"/><rect x="150" y="40" width="22" height="300"/>
+              <rect x="174" y="40" width="22" height="300"/><rect x="198" y="40" width="22" height="300"/><rect x="222" y="40" width="22" height="300"/>
+              <rect x="246" y="40" width="22" height="300"/><rect x="270" y="40" width="22" height="300"/><rect x="294" y="40" width="22" height="300"/>
+              <rect x="318" y="40" width="22" height="300"/><rect x="342" y="40" width="22" height="300"/>
+            </g>
+            <g fill="#b07a46" opacity=".55">
+              <rect x="52" y="40" width="2" height="300"/><rect x="100" y="40" width="2" height="300"/><rect x="148" y="40" width="2" height="300"/>
+              <rect x="196" y="40" width="2" height="300"/><rect x="244" y="40" width="2" height="300"/><rect x="292" y="40" width="2" height="300"/><rect x="340" y="40" width="2" height="300"/>
+            </g>
+          </g>
+          <rect class="js-hg-cap" x="24" y="118" width="346" height="8" rx="3" fill="#8f5e2f"/>
+
+          <!-- Dimension -->
+          <line class="js-hg-dim" x1="392" x2="392" y1="124" y2="340" stroke="#529119" stroke-width="2"/>
+          <line x1="384" x2="400" y1="340" y2="340" stroke="#529119" stroke-width="2"/>
+          <text class="js-hg-dim-label height-guide__dim" x="392" y="235">6 ft</text>
+
+          <!-- Eye level -->
+          <line x1="20" x2="604" y1="146" y2="146" stroke="#ffa300" stroke-width="2" stroke-dasharray="6 6"/>
+          <text x="604" y="138" class="height-guide__eye">Eye level</text>
+
+          <!-- Person, 5 ft 10 in -->
+          <g fill="#15201a">
+            <circle cx="470" cy="148" r="15"/>
+            <path d="M448 170 Q470 160 492 170 L498 252 L489 252 L487 340 L474 340 L472 262 L468 262 L466 340 L453 340 L451 252 L442 252 Z"/>
+          </g>
+        </svg>
+        <figcaption>Scale drawing: adult shown at 5 ft 10 in.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -735,7 +765,7 @@
   <section class="section" id="cost" aria-labelledby="cost-title">
     <div class="container cost-section">
       <div class="cost__content">
-        <h2 class="section__title" id="cost-title">What affects the cost of a privacy fence?</h2>
+        <h2 class="section__title" id="cost-title">How much does a privacy fence cost in Columbus?</h2>
         <p class="section__lead">Every yard is different, so we price every project on site. These are the factors that shape your quote.</p>
         <div class="factors">
           <div class="factor"><span class="factor__num">01</span><h3>Total length</h3><p>Measured in linear feet around the area you want enclosed.</p></div>
@@ -764,7 +794,7 @@
   <section class="section section--alt" id="process" aria-labelledby="process-title">
     <div class="container">
       <div class="section__head section__head--center">
-        <h2 class="section__title" id="process-title">How your privacy fence gets built</h2>
+        <h2 class="section__title" id="process-title">Our privacy fence process</h2>
         <p class="section__lead">A clear process from first visit to final walkthrough, with a timeline before we start.</p>
       </div>
       <ol class="process">
@@ -862,6 +892,14 @@
           <p>Vinyl and composite. Both resist fading, moisture and wear without staining or sealing. Vinyl just needs an occasional rinse, and composite gives you a wood look without the upkeep.</p>
         </details>
         <details class="acc">
+          <summary>Does a privacy fence reduce noise?</summary>
+          <p>Yes, somewhat. A solid, full-height fence with no gaps softens traffic and neighborhood noise, especially at 6 to 8 ft. It won't soundproof a yard, but most homeowners notice a calmer backyard.</p>
+        </details>
+        <details class="acc">
+          <summary>Will there be gaps between the boards?</summary>
+          <p>Natural wood shrinks as it dries, which can open small gaps. Board-on-board and shadowbox styles overlap the boards to prevent this, and vinyl and composite panels stay gap-free.</p>
+        </details>
+        <details class="acc">
           <summary>Which side of the fence faces my neighbor?</summary>
           <p>The finished side typically faces outward toward neighbors and the street, and many cities and HOAs require it. If you want both sides to look finished, shadowbox and board-on-board styles are great options.</p>
         </details>
@@ -885,18 +923,22 @@
     </div>
   </section>
 
-  <!-- ============ RELATED + AREAS ============ -->
+  <!-- ============ RELATED ============ -->
   <section class="section section--alt" id="related" aria-labelledby="related-title">
     <div class="container">
       <div class="section__head">
-        <h2 class="section__title" id="related-title">Explore more fence options</h2>
+        <h2 class="section__title" id="related-title">Related fences and services</h2>
       </div>
       <div class="related">
-        <a class="related__card" href="/pool-fence-columbus-ohio"><img src="assets/img/aluminum-1.webp" alt="" loading="lazy" /><span class="related__body"><h3>Pool Fences</h3><span>Code-compliant enclosures</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
-        <a class="related__card" href="/picket-fence-columbus-ohio"><img src="assets/img/picket-1.jpg" alt="" loading="lazy" /><span class="related__body"><h3>Picket Fences</h3><span>Classic front-yard charm</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
-        <a class="related__card" href="/vinyl-fence-columbus-ohio"><img src="assets/img/vinyl-3.webp" alt="" loading="lazy" /><span class="related__body"><h3>Vinyl Fences</h3><span>Low-maintenance styles</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
         <a class="related__card" href="/wood-fence-columbus-ohio"><img src="assets/img/wood-3.webp" alt="" loading="lazy" /><span class="related__body"><h3>Wood Fences</h3><span>Cedar &amp; pressure-treated pine</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="related__card" href="/vinyl-fence-columbus-ohio"><img src="assets/img/vinyl-3.webp" alt="" loading="lazy" /><span class="related__body"><h3>Vinyl Fences</h3><span>Low-maintenance styles</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="related__card" href="/pool-fence-columbus-ohio"><img src="assets/img/aluminum-1.webp" alt="" loading="lazy" /><span class="related__body"><h3>Pool Fences</h3><span>Code-compliant enclosures</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
       </div>
+      <a class="fin-line" href="/financing">
+        <span class="fin-line__icon" aria-hidden="true"><svg><use href="#i-file"/></svg></span>
+        <span><strong>Financing available.</strong> Spread the cost of your privacy fence into monthly payments for qualified buyers.</span>
+        <span class="fin-line__cta">See financing options <svg class="ico ico--sm"><use href="#i-arrow"/></svg></span>
+      </a>
     </div>
   </section>
 

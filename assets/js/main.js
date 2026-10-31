@@ -74,15 +74,17 @@
   let goTo = () => {};
   if (form) {
   const steps = $$('.quote__step', form);
-  const barFill = $('.quote__bar-fill', form);
-  const stepNum = $('.js-step-num', form);
+  const stepper = $$('.quote__steps li', form);
   let current = 1;
 
   goTo = (n) => {
     current = n;
     steps.forEach((s) => s.classList.toggle('is-active', +s.dataset.step === n));
-    barFill.style.width = `${(n / steps.length) * 100}%`;
-    stepNum.textContent = n;
+    stepper.forEach((li, i) => {
+      li.classList.toggle('is-done', i + 1 < n);
+      li.classList.toggle('is-current', i + 1 === n);
+    });
+    form.classList.add('is-engaged');
     if (n === 3) renderSummary();
   };
 
@@ -97,6 +99,8 @@
   $$('input[name="fence_type"]', form).forEach((r) =>
     r.addEventListener('change', () => {
       showError('fence_type', false);
+      $$('.quote__nav--start [data-next]', form).forEach((b) => { b.disabled = false; });
+      form.classList.add('is-engaged');
       setTimeout(() => goTo(2), 260);
     })
   );
@@ -143,6 +147,7 @@
 
     steps.forEach((s) => s.classList.remove('is-active'));
     $('.quote__head', form).hidden = true;
+    stepper.forEach((li) => li.classList.add('is-done'));
     $('.js-success-name', form).textContent = lead.name ? `, ${lead.name.split(' ')[0]}` : '';
     $('.quote__success', form).hidden = false;
   });
