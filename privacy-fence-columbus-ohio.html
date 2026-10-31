@@ -196,6 +196,7 @@
   </div>
 </div>
 
+
 <!-- Header -->
 <header class="header" id="header">
   <div class="container header__inner">
@@ -229,7 +230,7 @@
         <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
         <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
         <li class="nav__item"><a class="nav__link" href="index.html#financing">Financing</a></li>
-        <li class="nav__item"><a class="nav__link" href="index.html#areas">Service Areas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#faq">FAQ</a></li>
         <li class="nav__item"><a class="nav__link" href="/about-us">About</a></li>
       </ul>
     </nav>
@@ -248,7 +249,7 @@
     <a href="#projects">Projects</a>
     <a href="#reviews">Reviews</a>
     <a href="index.html#financing">Financing</a>
-    <a href="index.html#areas">Service Areas</a>
+    <a href="index.html#about">About Us</a>
     <a href="#faq">FAQ</a>
     <a class="btn btn--primary btn--block" href="#estimate" data-focus-form>Get a Free Estimate</a>
   </div>
@@ -653,6 +654,83 @@
     </div>
   </section>
 
+  <!-- ============ BUILT FOR OHIO WEATHER ============ -->
+  <section class="section section--dark" id="weather" aria-labelledby="weather-title">
+    <div class="container weather" data-active="1">
+      <div class="weather__content">
+        <h2 class="section__title" id="weather-title">Built for wind and <span class="nowrap">freeze–thaw</span></h2>
+        <p class="section__lead">A 6 ft privacy fence catches wind like a sail, and Columbus winters try to push posts out of the ground. The part you can't see is what keeps your fence straight, so we build it to handle both.</p>
+        <ol class="weather__points">
+          <li><button type="button" class="weather__point is-active" data-pt="1" aria-pressed="true"><span class="weather__num">1</span><span><strong>Posts set below the frost line</strong>Footings go deeper than the ground freezes, so freeze–thaw cycles can't heave posts out of line.</span></button></li>
+          <li><button type="button" class="weather__point" data-pt="2" aria-pressed="false"><span class="weather__num">2</span><span><strong>Concrete footings</strong>Every post is set in concrete for a solid base in Central Ohio's heavy clay soil.</span></button></li>
+          <li><button type="button" class="weather__point" data-pt="3" aria-pressed="false"><span class="weather__num">3</span><span><strong>Wind-rated panels</strong>Panel systems and post spacing chosen to carry the wind load of a full-height fence.</span></button></li>
+          <li><button type="button" class="weather__point" data-pt="4" aria-pressed="false"><span class="weather__num">4</span><span><strong>Racked or stepped on slopes</strong>Panels follow the grade or step down in level sections, with no big gaps underneath.</span></button></li>
+        </ol>
+      </div>
+
+      <figure class="weather__figure" aria-hidden="true">
+        <svg viewBox="0 0 520 470" class="weather__svg">
+          <defs>
+            <linearGradient id="wx-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6f0dc"/><stop offset="1" stop-color="#f6f9f2"/></linearGradient>
+            <pattern id="wx-soil" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#d9c9ae"/><circle cx="3" cy="4" r="1.3" fill="#c4b08f"/><circle cx="10" cy="10" r="1" fill="#c4b08f"/></pattern>
+            <pattern id="wx-concrete" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#c9cdc6"/><circle cx="3" cy="3" r="1" fill="#aeb3ab"/><circle cx="8" cy="7" r=".8" fill="#b7bcb4"/></pattern>
+          </defs>
+          <rect width="520" height="470" rx="18" fill="url(#wx-sky)"/>
+          <!-- Soil, rising on the right to show a slope -->
+          <path d="M0 262 L268 262 L520 220 L520 470 L0 470 Z" fill="url(#wx-soil)"/>
+          <path d="M0 262 L268 262 L520 220" fill="none" stroke="#8fb36a" stroke-width="6" stroke-linejoin="round"/>
+
+          <!-- Frost line -->
+          <g class="wx-part" data-pt="1">
+            <line x1="0" x2="520" y1="338" y2="338" stroke="#5b8fc9" stroke-width="2.5" stroke-dasharray="8 7"/>
+            <text x="504" y="330" class="weather__label" text-anchor="end" fill="#3d73ad">Frost line</text>
+          </g>
+
+          <!-- Concrete footing -->
+          <g class="wx-part" data-pt="2">
+            <path d="M222 286 L286 286 L296 424 Q254 436 212 424 Z" fill="url(#wx-concrete)" stroke="#9ea49b" stroke-width="2"/>
+          </g>
+
+          <!-- Left panel (wind side) -->
+          <g class="wx-part" data-pt="3">
+            <g fill="#c9915b">
+              <rect x="70" y="96" width="20" height="166"/><rect x="92" y="96" width="20" height="166"/><rect x="114" y="96" width="20" height="166"/>
+              <rect x="136" y="96" width="20" height="166"/><rect x="158" y="96" width="20" height="166"/><rect x="180" y="96" width="20" height="166"/>
+              <rect x="202" y="96" width="20" height="166"/><rect x="224" y="96" width="18" height="166"/>
+            </g>
+            <rect x="64" y="90" width="182" height="8" rx="3" fill="#8f5e2f"/>
+            <g fill="none" stroke="#5b8fc9" stroke-width="3" stroke-linecap="round" class="weather__wind">
+              <path d="M8 130 C 24 124, 36 136, 54 130"/><path d="M14 170 C 30 164, 42 176, 58 170"/><path d="M8 210 C 24 204, 36 216, 54 210"/>
+              <path d="M48 124 L56 130 L48 136" stroke-linejoin="round"/><path d="M52 164 L60 170 L52 176" stroke-linejoin="round"/><path d="M48 204 L56 210 L48 216" stroke-linejoin="round"/>
+            </g>
+          </g>
+
+          <!-- Racked panel following the slope -->
+          <g class="wx-part" data-pt="4">
+            <path d="M268 96 L500 58 L500 224 L268 262 Z" fill="#c9915b"/>
+            <g stroke="#b07a46" stroke-width="2" opacity=".6">
+              <line x1="290" y1="92" x2="290" y2="258"/><line x1="312" y1="89" x2="312" y2="255"/><line x1="334" y1="85" x2="334" y2="251"/>
+              <line x1="356" y1="81" x2="356" y2="248"/><line x1="378" y1="78" x2="378" y2="244"/><line x1="400" y1="74" x2="400" y2="241"/>
+              <line x1="422" y1="71" x2="422" y2="237"/><line x1="444" y1="67" x2="444" y2="233"/><line x1="466" y1="63" x2="466" y2="230"/><line x1="488" y1="60" x2="488" y2="226"/>
+            </g>
+            <path d="M264 90 L504 51 L504 59 L264 98 Z" fill="#8f5e2f"/>
+          </g>
+
+          <!-- Post -->
+          <rect x="242" y="76" width="24" height="338" rx="2" fill="#a86f3c"/>
+          <rect x="238" y="68" width="32" height="12" rx="3" fill="#7d4f24"/>
+
+          <!-- Markers -->
+          <g class="wx-mark" data-pt="1" transform="translate(358 338)"><circle r="15"/><text y="5">1</text></g>
+          <g class="wx-mark" data-pt="2" transform="translate(178 392)"><circle r="15"/><text y="5">2</text></g>
+          <g class="wx-mark" data-pt="3" transform="translate(146 178)"><circle r="15"/><text y="5">3</text></g>
+          <g class="wx-mark" data-pt="4" transform="translate(410 150)"><circle r="15"/><text y="5">4</text></g>
+        </svg>
+        <figcaption>Cross-section of a privacy fence post and footing. Not to scale.</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- ============ COST FACTORS ============ -->
   <section class="section" id="cost" aria-labelledby="cost-title">
     <div class="container cost-section">
@@ -819,23 +897,6 @@
         <a class="related__card" href="/vinyl-fence-columbus-ohio"><img src="assets/img/vinyl-3.webp" alt="" loading="lazy" /><span class="related__body"><h3>Vinyl Fences</h3><span>Low-maintenance styles</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
         <a class="related__card" href="/wood-fence-columbus-ohio"><img src="assets/img/wood-3.webp" alt="" loading="lazy" /><span class="related__body"><h3>Wood Fences</h3><span>Cedar &amp; pressure-treated pine</span></span><svg class="ico"><use href="#i-arrow"/></svg></a>
       </div>
-
-      <div class="area-strip">
-        <h3 class="area-strip__title"><svg class="ico"><use href="#i-pin"/></svg> Privacy fence installation near you</h3>
-        <ul class="cities cities--inline">
-          <li><a href="/fence-installation-services-columbus-ohio">Columbus</a></li>
-          <li><a href="/fence-installation-company-dublin-ohio">Dublin</a></li>
-          <li><a href="/fence-installation-company-powell-ohio">Powell</a></li>
-          <li><a href="/fence-installation-company-westerville-ohio">Westerville</a></li>
-          <li><a href="/fence-installation-company-new-albany-ohio">New Albany</a></li>
-          <li><a href="/fence-installation-company-hilliard-ohio">Hilliard</a></li>
-          <li><a href="/fence-installation-company-upper-arlington-ohio">Upper Arlington</a></li>
-          <li><a href="/fence-installation-company-grove-city-ohio">Grove City</a></li>
-          <li><a href="/fence-installation-company-lewis-center-ohio">Lewis Center</a></li>
-          <li><a href="/fence-installation-company-delaware-ohio">Delaware</a></li>
-          <li><a href="/fence-installation-company-galena-ohio">Galena</a></li>
-        </ul>
-      </div>
     </div>
   </section>
 
@@ -885,9 +946,8 @@
 <footer class="footer">
   <div class="container footer__grid">
     <div class="footer__brand">
-      <a href="index.html" class="logo logo--light" aria-label="Elite Fence home">
-        <svg class="logo__mark"><use href="#logo-mark"/></svg>
-        <span class="logo__text">Elite Fence<small>Columbus, Ohio</small></span>
+      <a href="index.html" class="logo logo--footer" aria-label="Elite Fence home">
+        <img src="assets/img/logo.webp" alt="Elite Fence logo" width="132" height="132" loading="lazy" />
       </a>
       <p>Locally owned fence company serving Columbus and Central Ohio since 2000. Installation, repair and replacement for homes and businesses.</p>
       <div class="socials">
@@ -955,6 +1015,7 @@
   </figure>
   <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo"><svg class="ico"><use href="#i-arrow"/></svg></button>
 </dialog>
+
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>

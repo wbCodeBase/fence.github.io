@@ -507,6 +507,21 @@
     dimLabel.textContent = '6 ft';
   }
 
+  /* ---------- Weather cross-section: link list items to diagram markers ---------- */
+  const weather = $('.weather');
+  if (weather) {
+    const points = $$('.weather__point', weather);
+    const setPoint = (pt) => {
+      weather.dataset.active = pt;
+      points.forEach((p) => { const on = p.dataset.pt === pt; p.classList.toggle('is-active', on); p.setAttribute('aria-pressed', on); });
+    };
+    points.forEach((p) => {
+      p.addEventListener('click', () => setPoint(p.dataset.pt));
+      p.addEventListener('mouseenter', () => setPoint(p.dataset.pt));
+      p.addEventListener('focus', () => setPoint(p.dataset.pt));
+    });
+  }
+
   /* ---------- Material comparison helper ---------- */
   const compare = $('.compare');
   if (compare) {

@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="preload" as="image" href="assets/video/hero-poster.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
@@ -108,7 +107,7 @@
         <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
         <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
         <li class="nav__item"><a class="nav__link" href="#financing">Financing</a></li>
-        <li class="nav__item"><a class="nav__link" href="#areas">Service Areas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#faq">FAQ</a></li>
         <li class="nav__item"><a class="nav__link" href="/about-us">About</a></li>
       </ul>
     </nav>
@@ -127,7 +126,7 @@
     <a href="#projects">Projects</a>
     <a href="#reviews">Reviews</a>
     <a href="#financing">Financing</a>
-    <a href="#areas">Service Areas</a>
+    <a href="#about">About Us</a>
     <a href="#faq">FAQ</a>
     <a class="btn btn--primary btn--block" href="#estimate" data-focus-form>Get a Free Estimate</a>
   </div>
@@ -646,38 +645,35 @@
     </div>
   </section>
 
-  <!-- ============ SERVICE AREAS ============ -->
-  <section class="section" id="areas" aria-labelledby="areas-title">
-    <div class="container areas">
-      <div class="areas__content">
-        <h2 class="section__title" id="areas-title">Proudly serving Columbus &amp; Central Ohio</h2>
-        <p class="section__lead">The same licensed, insured crew handles every installation, wherever you are in the area. Don't see your town? Call us. We likely cover it.</p>
-        <ul class="cities">
-          <li><a href="/fence-installation-services-columbus-ohio" data-city="columbus">Columbus</a></li>
-          <li><a href="/fence-installation-company-dublin-ohio" data-city="dublin">Dublin</a></li>
-          <li><a href="/fence-installation-company-powell-ohio" data-city="powell">Powell</a></li>
-          <li><a href="/fence-installation-company-westerville-ohio" data-city="westerville">Westerville</a></li>
-          <li><a href="/fence-installation-company-new-albany-ohio" data-city="newalbany">New Albany</a></li>
-          <li><a href="/fence-installation-company-hilliard-ohio" data-city="hilliard">Hilliard</a></li>
-          <li><a href="/fence-installation-company-upper-arlington-ohio" data-city="ua">Upper Arlington</a></li>
-          <li><a href="/fence-installation-company-grove-city-ohio" data-city="grovecity">Grove City</a></li>
-          <li><a href="/fence-installation-company-lewis-center-ohio" data-city="lewiscenter">Lewis Center</a></li>
-          <li><a href="/fence-installation-company-delaware-ohio" data-city="delaware">Delaware</a></li>
-          <li><a href="/fence-installation-company-galena-ohio" data-city="galena">Galena</a></li>
+  <!-- ============ ABOUT / INTRO ============ -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container intro">
+      <div class="intro__content">
+        <h2 class="section__title" id="about-title">Your local fence company in Columbus</h2>
+        <div class="intro__copy">
+          <p>Elite Fence has been building fences for Central Ohio homeowners and businesses since 2000. We're a locally owned fence contractor based in downtown Columbus, so the people who quote your project live and work in the same neighborhoods we build in.</p>
+          <p>We install wood, vinyl, aluminum, chain link and composite fencing, from backyard privacy fences and pool enclosures to commercial security perimeters. After more than 2,500 installations, we know how Columbus clay soil, freeze-thaw winters and local HOA rules affect a fence, and we plan every job around them.</p>
+          <p>Homeowners choose us for honest advice without the hard sell, clear pricing and crews that leave the yard cleaner than they found it.</p>
+        </div>
+        <ul class="intro__creds">
+          <li><svg class="ico"><use href="#i-shield"/></svg> Licensed, bonded &amp; insured</li>
+          <li><svg class="ico"><use href="#i-file"/></svg> Columbus City General Contractor license</li>
+          <li><svg class="ico"><use href="#i-award"/></svg> Westbury Award, Best Rail Installation</li>
+          <li><svg class="ico"><use href="#i-home"/></svg> Ohio Dept. of Agriculture certified</li>
         </ul>
       </div>
 
-      <div class="map">
-        <div class="map__canvas" id="service-map" role="region" aria-label="Map of the Elite Fence service area around Columbus, Ohio"></div>
-        <div class="map__card">
-          <span class="map__card-icon"><svg><use href="#i-pin"/></svg></span>
-          <div>
-            <p class="map__card-title">Elite Fence, Columbus office</p>
-            <p class="map__card-text">175 South 3rd St, Suite 200, Columbus, OH 43215</p>
-            <a class="map__card-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=175+South+3rd+St+Suite+200+Columbus+OH+43215" target="_blank" rel="noopener">Get directions <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
-          </div>
+      <aside class="promise reveal" aria-label="Our promise">
+        <div class="promise__media">
+          <img src="assets/img/picket-1.jpg" alt="White vinyl picket fence installed in front of a Columbus-area home" width="1920" height="1440" loading="lazy" />
         </div>
-      </div>
+        <div class="promise__body">
+          <img class="promise__badge" src="assets/img/logo.webp" alt="" width="132" height="132" loading="lazy" />
+          <p class="promise__label">Our promise to you</p>
+          <p class="promise__text">You get clear, written pricing before any work begins, and every product we install is backed by a full warranty.</p>
+          <p class="promise__sign">The Elite Fence team</p>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -768,9 +764,8 @@
 <footer class="footer">
   <div class="container footer__grid">
     <div class="footer__brand">
-      <a href="index.html" class="logo logo--light" aria-label="Elite Fence home">
-        <svg class="logo__mark"><use href="#logo-mark"/></svg>
-        <span class="logo__text">Elite Fence<small>Columbus, Ohio</small></span>
+      <a href="index.html" class="logo logo--footer" aria-label="Elite Fence home">
+        <img src="assets/img/logo.webp" alt="Elite Fence logo" width="132" height="132" loading="lazy" />
       </a>
       <p>Locally owned fence company serving Columbus and Central Ohio since 2000. Installation, repair and replacement for homes and businesses.</p>
       <div class="socials">
@@ -839,7 +834,6 @@
   <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo"><svg class="ico"><use href="#i-arrow"/></svg></button>
 </dialog>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
