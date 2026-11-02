@@ -48,20 +48,6 @@
     });
   }
 
-  /* ---------- Headline word rotator ---------- */
-  const words = $$('.rotator__word');
-  if (words.length && !reduceMotion) {
-    let i = 0;
-    setInterval(() => {
-      const current = words[i];
-      i = (i + 1) % words.length;
-      current.classList.remove('is-active');
-      current.classList.add('is-leaving');
-      setTimeout(() => current.classList.remove('is-leaving'), 450);
-      words[i].classList.add('is-active');
-    }, 2600);
-  }
-
   const validators = {
     name: (v) => v.trim().length > 1,
     phone: (v) => v.replace(/\D/g, '').length >= 10,
